@@ -14,6 +14,9 @@ public class PosicionHelper {
     /**
      * Calcula la coordenada X de una posición dada.
      *
+     * <p>
+     * Transformacion polares a cartesianas x = r⋅cos(θ)
+     *
      * @param posicion la posición del planeta
      * @return la coordenada X
      */
@@ -23,7 +26,9 @@ public class PosicionHelper {
     }
 
     /**
-     * Calcula la coordenada  Yde una posición dada.
+     * Calcula la coordenada Y de una posición dada.
+     * <p>
+     * Transformacion polares a cartesianas y= r⋅sen(θ)
      *
      * @param posicion la posición del planeta
      * @return la coordenada Y
@@ -35,6 +40,8 @@ public class PosicionHelper {
 
     /**
      * Calcula la pendiente entre dos puntos.
+     * <p>
+     * Calculo Pendiente: m = (y1 - y2)/(x1 -x2)
      *
      * @param p1 la primera posición
      * @param p2 la segunda posición
